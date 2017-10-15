@@ -1,11 +1,12 @@
-## [About Me] (https://griiid.github.io/about)
+## [About Me](https://griiid.github.io/about)
 
-## Jekyll Theme - Long Haul
+## Jekyll Theme I used - Long Haul
 
-### License
+> ### License
+> This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
 
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+Long Haul information:
 
-#### [Github](https://github.com/brianmaierjr/long-haul)
-#### [View Demo](http://brianmaierjr.com/long-haul)
-#### [Author's Twitter: @brianmaierjr](https://twitter.com/brianmaierjr)
+- [Github](https://github.com/brianmaierjr/long-haul)
+- [View Demo](http://brianmaierjr.com/long-haul)
+- [Author's Twitter: @brianmaierjr](https://twitter.com/brianmaierjr)
