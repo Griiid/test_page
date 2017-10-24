@@ -7,43 +7,15 @@
 
     <!-- Open Graph Meta -->
     <meta content="{{ site.title }}" property="og:site_name">
-    {% if page.title %}
-    <!-- 1 -->
-      <meta content="{{ page.title }}" property="og:title">
-    {% else %}
-    <!-- 2 -->
-      <meta content="{{ site.title }}" property="og:title">
-    {% endif %}
-    {% if page.title %}
-    <!-- 1 -->
-      <meta content="article" property="og:type">
-    {% else %}
-    <!-- 2 -->
-      <meta content="website" property="og:type">
-    {% endif %}
-    {% if page.description %}
-    <!-- 1 -->
-      <meta content="{{ page.description }}" property="og:description">
-    {% else %}
-    <!-- 2 -->
-      <meta content="{{ site.description }}" property="og:description">
-    {% endif %}
-    {% if page.url %}
-    <!-- 1 -->
-      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {% endif %}
-    {% if page.date %}
-    <!-- 1 -->
-      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-      <meta content="{{ site.url }}/about/" property="article:author">
-    {% endif %}
-    {% if page.image %}
-    <!-- 1 -->
-      <meta content="{{ site.url }}/assets/img/{{ page.image }}" property="og:image">
-    {% else %}
-    <!-- 2 -->
-      <meta content="{{ '/assets/img/touring.jpg' | prepend: site.url }}" property="og:image">
-    {% endif %}
+    <meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title">
+    <meta content="{% if page.title %}article{% else %}website{% endif %}" property="og:type">
+    <meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" property="og:description">
+    <meta content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}" property="og:url">
+    {%- if page.date -%}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ site.url }}/about/" property="article:author">
+    {%- endif -%}
+    <meta content="{{ site.url }}/assets/img/{% if page.image %}{{ page.image }}{% else %}touring.jpg{% endif %}" property="og:image">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" />
