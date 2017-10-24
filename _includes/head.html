@@ -5,12 +5,52 @@
     <meta name="description" content="">
     <title>{{ page.title }}</title>
 
+    <!-- Open Graph Meta -->
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}
+    <!-- 1 -->
+      <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+    <!-- 2 -->
+      <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.title %}
+    <!-- 1 -->
+      <meta content="article" property="og:type">
+    {% else %}
+    <!-- 2 -->
+      <meta content="website" property="og:type">
+    {% endif %}
+    {% if page.description %}
+    <!-- 1 -->
+      <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+    <!-- 2 -->
+      <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+    <!-- 1 -->
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+    {% if page.date %}
+    <!-- 1 -->
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+      <meta content="{{ site.url }}/about/" property="article:author">
+    {% endif %}
+    {% if page.image %}
+    <!-- 1 -->
+      <meta content="{{ site.url }}/assets/img/{{ page.image }}" property="og:image">
+    {% else %}
+    <!-- 2 -->
+      <meta content="{{ '/assets/img/touring.jpg' | prepend: site.url }}" property="og:image">
+    {% endif %}
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" />
 
     <!-- Come and get me RSS readers -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
     <!--[if IE 8]><link rel="stylesheet" href="{{ "/assets/css/ie.css" | prepend: site.baseurl }}"><![endif]-->
