@@ -3,7 +3,7 @@ layout: about
 title: About Griiid
 ---
 <div class="post">
-	<center><img src="{{ '/assets/img/grid_avatar.png' | prepend: site.baseurl }}" alt=""></center>
+	<center><img src="{{ '/assets/img/grid-avatar.png' | prepend: site.baseurl }}" alt=""></center>
 	<h2>方格子，本名許晉豪</h2>
 	<h3>經歷</h3>
 	<ul>
