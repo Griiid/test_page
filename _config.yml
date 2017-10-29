@@ -3,6 +3,7 @@ description: Hi, welcome to Griiid's blog!
 
 url: https://griiid.github.io
 baseurl: ""
+imgurl: "/assets/img"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
