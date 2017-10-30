@@ -7,11 +7,6 @@ imgurl: "/assets/img"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
-markdown: kramdown
-highlighter: rouge
-gems: [jekyll-paginate]
-paginate: 5
-
 navigation:
  - title: Home
    url: /index.html
@@ -27,3 +22,11 @@ social:
 #  twitter: brianmaierjr
 
 google_analytics: "UA-108611085-1"
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+kramdown:
+  hard_wrap: true
