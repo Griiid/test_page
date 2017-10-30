@@ -221,32 +221,19 @@ POST STYLING
 	}
 
 	blockquote {
-		clear: both;
-		margin: 2.5em 0;
-		padding: 0;
+		color: $blockquote-text-color;
 		line-height: 1.8;
-		position: relative;
+		border-left-color: $background-color;
+		border-left-style: solid;
+		border-left-width: 3.5px;
+		border-spacing: 0;
+		width: 75%;
+		float: none;
+		margin: 0 auto 2rem;
+		padding: 0 2rem;
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: -1.25em;
-			background: $background-color;
-			display: block;
-			height: 2px;
-			width: 150px;
-			left: calc(50% - 75px);
-		}
-
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: -1.25em;
-			background: $background-color;
-			display: block;
-			height: 2px;
-			width: 150px;
-			left: calc(50% - 75px);
+		p {
+			width: 100%;
 		}
 	}
 
@@ -274,7 +261,8 @@ POST STYLING
 	}
 
 	img {
-		margin-bottom: 2rem;
+		margin: 0 auto;
+		display: block;
 	}
 
 	.highlight {

@@ -22,6 +22,7 @@ $maroon:  #85144B;
 $white:  #fff;
 $silver: #ddd;
 $grey:   #aaa;
+$dark-grey: #666;
 $black:  #111;
 
 // Color variables
@@ -30,6 +31,8 @@ $secondary-color: #233E5B;
 $tertiary-color: #aaa;
 $link-color: $primary-color;
 $background-color: $primary-color;
+$blockquote-text-color: $dark-grey;
+$blockquote-link-color: $olive;
 
 $bad-color: $red; // Bad color for errors, validation etc.
 $good-color: $green; // Good color for success etc.
