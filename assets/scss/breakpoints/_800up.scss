@@ -149,6 +149,18 @@ POST STYLING
 		margin: 2rem auto 1em;
 	}
 
+	blockquote {
+		width: 75%;
+		float: none;
+		margin: 0 auto 2rem;
+		padding: 0 2rem;
+		font-size: 100%;
+
+		p {
+			width: 100%;
+		}
+	}
+
 	.featuredImage {
 		position: relative;
 		margin-top: 2rem;
