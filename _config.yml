@@ -29,4 +29,4 @@ gems: [jekyll-paginate]
 paginate: 5
 
 kramdown:
-  hard_wrap: true
+  hard_wrap: false
