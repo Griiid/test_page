@@ -5,10 +5,10 @@ copyright: Griiid
 keywords: Griiid, Griiider, 方格子, 許晉豪, C, C++, Objective-C, Swift, iOS, app, git, Mac, OSX
 
 url: https://griiid.github.io
-baseurl: ""
+baseurl: "/blog"
 imgurl: "/assets/img"
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+paginate_path: "page:num/"
+permalink: :title/
 
 navigation:
  - title: Home
